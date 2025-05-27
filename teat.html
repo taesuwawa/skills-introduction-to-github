@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<title>แบบทดสอบคำอุปสรรคฟิสิกส์</title>
+<style>
+  body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  .question {
+    margin-bottom: 20px;
+  }
+  .choices label {
+    display: block;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  #result {
+    margin-top: 30px;
+    padding: 15px;
+    border: 2px solid #333;
+    background: #f0f0f0;
+    display: none;
+  }
+  .correct {
+    color: green;
+  }
+  .wrong {
+    color: red;
+  }
+</style>
+</head>
+<body>
+
+<h1>แบบทดสอบคำอุปสรรคฟิสิกส์ (20 ข้อ)</h1>
+
+<form id="quizForm">
+  <div class="question">
+    1. คำอุปสรรค 'เซนติ' (centi) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q1" value="10^-1"> 10⁻¹</label>
+      <label><input type="radio" name="q1" value="10^-2"> 10⁻²</label>
+      <label><input type="radio" name="q1" value="10^-3"> 10⁻³</label>
+      <label><input type="radio" name="q1" value="10^-6"> 10⁻⁶</label>
+    </div>
+  </div>
+
+  <div class="question">
+    2. คำอุปสรรค 'กิโล' (kilo) มีค่าเท่ากับเท่าไร?
+    <div class="choices">
+      <label><input type="radio" name="q2" value="10^3"> 10³</label>
+      <label><input type="radio" name="q2" value="10^6"> 10⁶</label>
+      <label><input type="radio" name="q2" value="10^-3"> 10⁻³</label>
+      <label><input type="radio" name="q2" value="10^-6"> 10⁻⁶</label>
+    </div>
+  </div>
+
+  <!-- ต่อข้ออื่นๆ เช่นเดียวกัน เพิ่มได้ตามต้องการ -->
+
+  <div class="question">
+    3. คำอุปสรรค 'นาโน' (nano) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q3" value="10^-6"> 10⁻⁶</label>
+      <label><input type="radio" name="q3" value="10^-9"> 10⁻⁹</label>
+      <label><input type="radio" name="q3" value="10^-3"> 10⁻³</label>
+      <label><input type="radio" name="q3" value="10^3"> 10³</label>
+    </div>
+  </div>
+4. คำอุปสรรค 'เมกะ' (mega) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q4"> 10⁶</label>
+      <label><input type="radio" name="q4"> 10³</label>
+      <label><input type="radio" name="q4"> 10⁹</label>
+      <label><input type="radio" name="q4"> 10⁻⁶</label>
+    </div>
+  </div>
+
+  <div class="question">
+    5. คำอุปสรรค 'ไมโคร' (micro) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q5"> 10⁻⁹</label>
+      <label><input type="radio" name="q5"> 10⁻⁶</label>
+      <label><input type="radio" name="q5"> 10⁻³</label>
+      <label><input type="radio" name="q5"> 10³</label>
+    </div>
+  </div>
+
+  <div class="question">
+    6. คำอุปสรรค 'มิลลิ' (milli) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q6"> 10⁻¹</label>
+      <label><input type="radio" name="q6"> 10⁻²</label>
+      <label><input type="radio" name="q6"> 10⁻³</label>
+      <label><input type="radio" name="q6"> 10⁻⁶</label>
+    </div>
+  </div>
+
+  <div class="question">
+    7. คำอุปสรรค 'เทรา' (tera) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q7"> 10⁹</label>
+      <label><input type="radio" name="q7"> 10¹²</label>
+      <label><input type="radio" name="q7"> 10¹⁵</label>
+      <label><input type="radio" name="q7"> 10⁶</label>
+    </div>
+  </div>
+
+  <div class="question">
+    8. คำอุปสรรค 'พิโก' (pico) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q8"> 10⁻⁶</label>
+      <label><input type="radio" name="q8"> 10⁻⁹</label>
+      <label><input type="radio" name="q8"> 10⁻¹²</label>
+      <label><input type="radio" name="q8"> 10⁻¹⁵</label>
+    </div>
+  </div>
+
+  <div class="question">
+    9. คำอุปสรรค 'เดซิ' (deci) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q9"> 10⁻¹</label>
+      <label><input type="radio" name="q9"> 10⁻²</label>
+      <label><input type="radio" name="q9"> 10⁻³</label>
+      <label><input type="radio" name="q9"> 10⁻⁶</label>
+    </div>
+  </div>
+
+  <div class="question">
+    10. คำอุปสรรค 'จิกะ' (giga) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q10"> 10⁹</label>
+      <label><input type="radio" name="q10"> 10⁶</label>
+      <label><input type="radio" name="q10"> 10³</label>
+      <label><input type="radio" name="q10"> 10¹²</label>
+    </div>
+  </div>
+
+  <div class="question">
+    11. คำอุปสรรค 'เฟมโต' (femto) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q11"> 10⁻¹²</label>
+      <label><input type="radio" name="q11"> 10⁻¹⁵</label>
+      <label><input type="radio" name="q11"> 10⁻⁹</label>
+      <label><input type="radio" name="q11"> 10⁻⁶</label>
+    </div>
+  </div>
+
+  <div class="question">
+    12. คำอุปสรรค 'แอทโต' (atto) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q12"> 10⁻⁹</label>
+      <label><input type="radio" name="q12"> 10⁻¹²</label>
+      <label><input type="radio" name="q12"> 10⁻¹⁵</label>
+      <label><input type="radio" name="q12"> 10⁻¹⁸</label>
+    </div>
+  </div>
+
+  <div class="question">
+    13. คำอุปสรรค 'เฮกโต' (hecto) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q13"> 10¹</label>
+      <label><input type="radio" name="q13"> 10²</label>
+      <label><input type="radio" name="q13"> 10³</label>
+      <label><input type="radio" name="q13"> 10⁶</label>
+    </div>
+  </div>
+
+  <div class="question">
+    14. คำอุปสรรค 'เดคา' (deca) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q14"> 10¹</label>
+      <label><input type="radio" name="q14"> 10²</label>
+      <label><input type="radio" name="q14"> 10⁻¹</label>
+      <label><input type="radio" name="q14"> 10⁻²</label>
+    </div>
+  </div>
+
+  <div class="question">
+    15. คำอุปสรรค 'เพตา' (peta) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q15"> 10¹²</label>
+      <label><input type="radio" name="q15"> 10¹⁵</label>
+      <label><input type="radio" name="q15"> 10⁶</label>
+      <label><input type="radio" name="q15"> 10⁹</label>
+    </div>
+  </div>
+
+  <div class="question">
+    16. คำอุปสรรค 'เอ็กซา' (exa) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q16"> 10¹⁵</label>
+      <label><input type="radio" name="q16"> 10¹⁸</label>
+      <label><input type="radio" name="q16"> 10⁹</label>
+      <label><input type="radio" name="q16"> 10³</label>
+    </div>
+  </div>
+
+  <div class="question">
+    17. คำอุปสรรค 'ซับโต' (zepto) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q17"> 10⁻¹⁸</label>
+      <label><input type="radio" name="q17"> 10⁻²¹</label>
+      <label><input type="radio" name="q17"> 10⁻¹²</label>
+      <label><input type="radio" name="q17"> 10⁻⁹</label>
+    </div>
+  </div>
+
+  <div class="question">
+    18. คำอุปสรรค 'ยอกโต' (yocto) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q18"> 10⁻²⁴</label>
+      <label><input type="radio" name="q18"> 10⁻²¹</label>
+      <label><input type="radio" name="q18"> 10⁻¹⁸</label>
+      <label><input type="radio" name="q18"> 10⁻¹⁵</label>
+    </div>
+  </div>
+
+  <div class="question">
+    19. คำอุปสรรค 'เซตตา' (zetta) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q19"> 10¹⁸</label>
+      <label><input type="radio" name="q19"> 10²¹</label>
+      <label><input type="radio" name="q19"> 10²⁴</label>
+      <label><input type="radio" name="q19"> 10¹⁵</label>
+    </div>
+  </div>
+
+  <div class="question">
+    20. คำอุปสรรค 'ยอตตา' (yotta) มีค่าเท่ากับ?
+    <div class="choices">
+      <label><input type="radio" name="q20"> 10²¹</label>
+      <label><input type="radio" name="q20"> 10²⁴</label>
+      <label><input type="radio" name="q20"> 10¹⁸</label>
+      <label><input type="radio" name="q20"> 10¹²</label>
+    </div>
+  </div>
+
+  <button type="button" onclick="submitQuiz()">ส่งคำตอบ</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+  const answers = {
+    q1: "10^-2",
+    q2: "10^3",
+    q3: "10^-9",
+    q4: "10^6",
+    q5: "10^-6",
+    q6: "10^-3",
+    q7: "10^12",
+    q8: "10^-12",
+    q9: "10^-1",
+    q10: "10^9",
+    q11: "10^-15",
+    q12: "10^-18",
+    q13: "10^2",
+    q14: "10^1",
+    q15: "10^15",
+    q16: "10^18",
+    q17: "10^-21",
+    q18: "10^-24",
+    q19: "10^21",
+    q20: "10^24"
+  };
+
+  function submitQuiz() {
+    let form = document.getElementById('quizForm');
+    let resultDiv = document.getElementById('result');
+    let score = 0;
+    let total = Object.keys(answers).length;
+    let resultHTML = '<h2>ผลลัพธ์และเฉลย</h2><ol>';
+
+    for (let i = 1; i <= total; i++) {
+      let q = 'q' + i;
+      let selected = form[q].value || null;
+      if (!selected) {
+        alert(`กรุณาตอบคำถามข้อที่ ${i} ก่อนส่ง`);
+        return;
+      }
+      if (selected === answers[q]) score++;
+      let correctAnswer = answers[q];
+      let color = (selected === correctAnswer) ? 'correct' : 'wrong';
+      resultHTML += `<li>ข้อ ${i}: คุณเลือก <b class="${color}">${selected}</b> | เฉลยคือ <b class="correct">${correctAnswer}</b></li>`;
+    }
+    resultHTML += `</ol><p>คะแนนของคุณคือ ${score} / ${total}</p>`;
+    resultDiv.innerHTML = resultHTML;
+    resultDiv.style.display = 'block';
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+</script>
+
+</body>
+</html>
